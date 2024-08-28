@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Definiere die CARP-Interface-Variable (ändere sie entsprechend deiner Umgebung)
-CARP_INTERFACE="vhid0"
+CARP_INTERFACE="vhid10"
 
 # Status des CARP-Interfaces abfragen
 CARP_STATUS=$(ifconfig $CARP_INTERFACE | grep 'carp: MASTER' | wc -l)
